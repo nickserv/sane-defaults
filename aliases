@@ -14,6 +14,7 @@ alias diff='colordiff' #requires colordiff package
 alias df='df -h'
 alias du='du -h'
 alias free='free -h'
+alias less='less -i'
 alias mkdir='mkdir -p'
 alias ..='cd ..'
 
