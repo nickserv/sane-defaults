@@ -11,10 +11,11 @@ alias egrep='egrep --color=auto'
 alias diff='colordiff' #requires colordiff package
 
 # modified commands
-alias du='du -h'
 alias df='df -h'
+alias du='du -h'
 alias free='free -h'
 alias mkdir='mkdir -p'
+alias ..='cd ..'
 
 # safety features
 alias cp='cp -i'
