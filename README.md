@@ -1,6 +1,7 @@
 #Sane Defaults for Linux/Unix Software
 
-## Project Status: partially complete (lacks an installer and needs more configs)
+## Project Status
+partially complete (lacks an installer and needs more configs)
 
 ##The Problem
 Software on Linux and Unix is awesome. But let's face it, tons of good software for them lack sensible and easy to understand defaults. la aliases to ls -a, but not always. Common command line programs like ls, grep, and git often have their fully functioning built in color support disabled by default. Vim has syntax highlighting, its improved command syntax, and line numbers disabled by default. But what if there were better config files to solve this problem? That's where this project comes in handy.
