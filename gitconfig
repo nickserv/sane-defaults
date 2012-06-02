@@ -1,0 +1,24 @@
+[user]
+	#name = ?
+	#email = ?
+[github]
+	#user = ?
+	#token = ?
+
+[alias]
+	#short command = long command
+	uncommit = reset --soft HEAD^
+	unstage = reset
+
+[color]
+	ui = true
+[core]
+	autocrlf = input #set this to "input" on Mac/Linux and "true" on Windows
+	#editor = ?
+[diff]
+	mnemonicprefix = true
+	rename = copy
+[grep]
+	lineNumber = true
+[interactive]
+	singlekey = true

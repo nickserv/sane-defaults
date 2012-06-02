@@ -1,0 +1,6 @@
+[ui]
+# Name data to appear in commits
+#username = ?
+#editor = ?
+[extensions]
+color =
