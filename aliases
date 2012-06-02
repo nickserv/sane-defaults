@@ -1,0 +1,32 @@
+#!/bin/bash
+#alias NICKNAME='COMMAND'
+
+# color support
+alias ls='ls --color=auto'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias diff='colordiff' #requires colordiff package
+
+# modified commands
+alias du='du -h'
+alias df='df -h'
+alias free='free -h'
+alias mkdir='mkdir -p'
+
+# safety features
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -I'
+alias ln='ln -i'
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+# ls
+alias ls='ls -h'
+alias la='ls -A'
+alias ll='ls -lh'
+alias l='ls -alh'
