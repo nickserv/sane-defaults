@@ -15,7 +15,7 @@ alias df='df -h'
 alias du='du -h'
 alias free='free -h'
 alias less='less -i'
-alias mkdir='mkdir -p'
+alias mkdir='mkdir -pv'
 alias ..='cd ..'
 
 # safety features
@@ -32,3 +32,4 @@ alias ls='ls -h'
 alias la='ls -A'
 alias ll='ls -lh'
 alias l='ls -alh'
+alias lr='ls -R'
