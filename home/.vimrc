@@ -24,6 +24,10 @@ set encoding=utf-8
 " # UI
 """""""""""""""""""""""""""""""""
 
+" Directories for swp files
+set backupdir=~/.vim/backup
+set directory=~/.vim/backupf
+
 " Line numbers
 set number
 
