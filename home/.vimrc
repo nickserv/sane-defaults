@@ -1,97 +1,127 @@
-"""""""""""""""""""""""""""""""""
-" # GENERAL
-"""""""""""""""""""""""""""""""""
+""""""
+" UI "
+""""""
 
-" Automatically load changed files
-set autoread
-
-" Enable mouse support
-set mouse=a
-
-" We don't like vi
+" disable vi compatibility
 set nocompatible
 
-" Add the g flag to search/replace by default
-set gdefault
+" automatically load changed files
+set autoread
 
-" Show the filename in the window titlebar
+" auto-reload vimrc
+autocmd! bufwritepost vimrc source ~/.vim/vimrc
+"autocmd! bufwritepost gvimrc source ~/.vim/gvimrc
+
+" show the filename in the window titlebar
 set title
 
-" Set encoding
+" set encoding
 set encoding=utf-8
-
-"""""""""""""""""""""""""""""""""
-" # UI
-"""""""""""""""""""""""""""""""""
 
 " Directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backupf
 
-" Line numbers
+" display incomplete commands at the bottom
+set showcmd
+
+" mouse support
+set mouse=a
+
+" line numbers
 set number
 
-" Always show current position
-set ruler
-
-" Highlight current line
+" highlight cursor line
 set cursorline
 
-" Highlight search matches
-set hlsearch
-" Incremental search (like in modern web browsers)
-set incsearch
-" Ignore case when searching
-set ignorecase
-" Override ignorecase if the search contains upper case characters
-set smartcase
+" wrapping stuff
+set textwidth=80
+set colorcolumn=80
 
-" Turn on magic for regexes
-set magic
+" ignore whitespace in diff mode
+set diffopt+=iwhite
 
 " Be able to arrow key and backspace across newlines
 set whichwrap=bs<>[]
 
-" Show status bar
+" Status bar
 set laststatus=2
 
-" Remember last location in file
-if has("autocmd")
-	au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-		\| exe "normal g'\"" | endif
-endif
+" remember last cursor position
+autocmd BufReadPost *
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\ 	exe "normal g`\"" |
+	\ endif
 
-" Display partial commands in the status line
-set showcmd
+" show '>   ' at the beginning of lines that are automatically wrapped
+set showbreak=>\ \ \ 
 
-"""""""""""""""""""""""""""""""""
-" # COLORS/FONTS
-"""""""""""""""""""""""""""""""""
+" enable completion
+set ofu=syntaxcomplete#Complete
 
-" Syntax highlighting!
-syntax on
-"set background=dark "uncomment this if your terminal has a dark background
+" make laggy connections work faster
+set ttyfast
 
-"""""""""""""""""""""""""""""""""
-" # TEXT, TABS, INDENTATION, ETC.
-"""""""""""""""""""""""""""""""""
+" let vim open up to 100 tabs at once
+set tabpagemax=100
 
-" Allow backspacing over everything in insert mode
-set backspace=indent,eol,start
+" case-insensitive filename completion
+set wildignorecase
 
-" More auto indentation/tab magic
-set autoindent "copy indent from current line when starting a new line
+"""""""""""""
+" Searching "
+"""""""""""""
+
+set hlsearch "when there is a previous search pattern, highlight all its matches
+set incsearch "while typing a search command, show immediately where the so far typed pattern matches
+set ignorecase "ignore case in search patterns
+set smartcase "override the 'ignorecase' option if the search pattern contains uppercase characters
+set gdefault "imply global for new searches
+
+"""""""""""""
+" Indenting "
+"""""""""""""
+
+" When auto-indenting, use the indenting format of the previous line
+set copyindent
+" When on, a <Tab> in front of a line inserts blanks according to 'shiftwidth'.
+" 'tabstop' is used in other places. A <BS> will delete a 'shiftwidth' worth of
+" space at the start of the line.
+set smarttab
+" Copy indent from current line when starting a new line (typing <CR> in Insert
+" mode or when using the "o" or "O" command)
+set autoindent
+" Automatically inserts one extra level of indentation in some cases, and works
+" for C-like files
 set smartindent
 
-"""""""""""""""""""""""""""""""""
-" # LANGUAGES/FILETYPES
-"""""""""""""""""""""""""""""""""
+"""""""""
+" Theme "
+"""""""""
 
-" Load the plugin and indent settings for the detected filetype
+" syntax highlighting
+syntax enable
+"set background=dark "uncomment this if your terminal has a dark background
+
+""""""""
+" GVim "
+""""""""
+
+"disable cursor blinking
+set gcr=n:blinkon0
+
+"remove menu bar
+set guioptions-=m
+
+"""""""""""""""""""""
+" Language-Specific "
+"""""""""""""""""""""
+
+" load the plugin and indent settings for the detected filetype
 filetype plugin indent on
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
 au BufRead,BufNewFile *.html.erb set ft=eruby
 
 " Add json syntax highlighting
