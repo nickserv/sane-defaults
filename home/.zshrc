@@ -1,9 +1,8 @@
-#!/bin/zsh
 
 # if not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# load aliases
+# Set up aliases
 if [ -f ~/.aliases ]; then
 	. ~/.aliases
 fi
