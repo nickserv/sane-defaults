@@ -12,6 +12,12 @@ for them lack sensible and easy to understand defaults. la aliases to ls -a, but
 	default. But what if there were better config files to solve this problem?
 	That's where this project comes in handy.
 
+## About
+Sane defaults is a castle (dotfile repo) for
+[homeshick](https://github.com/andsens/homeshick) which contains Linux/Unix
+configs that make programs safer, better, and more intuitive, the way
+they should be.
+
 ##Goals
 - avoid interfering with the results a user expects to get when running a
 	command
