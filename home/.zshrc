@@ -36,3 +36,19 @@ export SAVEHIST=1000
 export HISTFILE=~/.zsh_history
 # append command to history file once executed
 setopt inc_append_history
+# only show past commands that include the current input
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
+########
+# Misc #
+########
+
+# Load autocorrect things
+setopt correctall
+
+# Automatically use cd when paths are entered without cd
+setopt autocd
+
+# History search with ctrl-r
+bindkey '^R' history-incremental-search-backward
