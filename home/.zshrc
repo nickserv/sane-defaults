@@ -1,5 +1,6 @@
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+###############
+# Completions #
+###############
 
 # Completions
 autoload -U compinit
@@ -11,6 +12,10 @@ zstyle ':completion:*' menu select
 # Case-insensitive (all),partial-word and then substring completion
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
+###########
+# Aliases #
+###########
+
 # Set up aliases
 if [ -f ~/.aliases ]; then
 	. ~/.aliases
@@ -19,7 +24,10 @@ fi
 # Autocomplete command line switches for aliases
 setopt completealiases
 
-# Set up history
+###########
+# History #
+###########
+
 # number of lines kept in history
 export HISTSIZE=1000
 # number of lines saved in the history after logout

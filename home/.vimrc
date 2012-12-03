@@ -18,7 +18,7 @@ set title
 " set encoding
 set encoding=utf-8
 
-" Directories for swp files
+" directories for swp files
 set backupdir=~/.vim/backup
 set directory=~/.vim/backupf
 
@@ -99,7 +99,6 @@ set smartindent
 " Theme "
 """""""""
 
-" syntax highlighting
 syntax enable
 "set background=dark "uncomment this if your terminal has a dark background
 
