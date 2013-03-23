@@ -15,6 +15,8 @@ alias du='du -h'
 alias free='free -h'
 alias less='less -i'
 alias mkdir='mkdir -pv'
+alias ping='ping -c 3'
+alias feh='feh --scale-down --auto-zoom'
 alias ..='cd ..'
 
 # privileged access
