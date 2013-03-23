@@ -1,3 +1,9 @@
 # Ignore Linux things
 !.gitignore
 *~
+
+# Ignore Vim things
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
