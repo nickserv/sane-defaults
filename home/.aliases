@@ -32,7 +32,7 @@ alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 
 # ls
-alias ls='ls -h'
+alias ls='ls -hF --color=auto --group-directories-first'
 alias la='ls -A'
 alias ll='ls -lh'
 alias l='ls -alh'
