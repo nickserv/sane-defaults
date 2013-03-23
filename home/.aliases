@@ -17,6 +17,11 @@ alias less='less -i'
 alias mkdir='mkdir -pv'
 alias ..='cd ..'
 
+# privileged access
+if [ $UID -ne 0 ]; then
+    alias sudo='sudo ' # passes aliases over to root when using sudo
+fi
+
 # safety features
 alias cp='cp -i'
 alias mv='mv -i'
