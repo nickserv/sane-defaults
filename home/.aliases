@@ -8,7 +8,6 @@ alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-alias diff='colordiff' #requires colordiff package
 
 # modified commands
 alias df='df -h'
