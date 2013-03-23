@@ -1,5 +1,5 @@
 ! UI
 urxvt.scrollstyle: plain
 
-! Built-in Extensions
+! Extensions
 urxvt.perl-ext-common: default,tabbed
