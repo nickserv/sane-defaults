@@ -1,4 +1,4 @@
-#Sane Defaults for Linux/Unix Software
+# Sane defaults for Linux/Unix software
 
 ## Project Status
 __partially complete__ (lacks an installer and needs more configs)
