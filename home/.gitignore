@@ -9,7 +9,6 @@
 # More information: http://help.github.com/git-ignore/
 
 # Linux files
-!.gitignore
 *~
 
 # OS X files
@@ -28,10 +27,11 @@ Desktop.ini
 $RECYCLE.BIN/
 
 # Vim files
-.*.sw[a-z]
+.*.s[a-w][a-z]
 *.un~
 Session.vim
 .netrwhist
+*~
 
 # SublimeText project files
 *.sublime-workspace
@@ -41,20 +41,16 @@ Session.vim
 *.tmproject
 tmtags
 
-# Eclipse files
+# Eclipse files (covers most of the basic stuff, you might need to add more)
 .classpath
 .project
 .settings
-bin/**
 
 # Intellij files
 *.iml
 *.ipr
 *.iws
 .idea/
-*.eml
-.idea
-/out
 
 # Emacs files
 *~
