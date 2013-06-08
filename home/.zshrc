@@ -44,14 +44,9 @@ bindkey "^[[B" history-beginning-search-forward
 # Misc #
 ########
 
-# Load autocorrect things
-setopt correctall
-
 # Automatically use cd when paths are entered without cd
 setopt autocd
 
 # Use emacs keybinds, since they're modeless and closer to bash defaults
 bindkey -e
 
-# History search with ctrl-r
-bindkey '^R' history-incremental-search-backward
