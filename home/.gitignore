@@ -7,3 +7,32 @@
 *.un~
 Session.vim
 .netrwhist
+
+# Eclipse files
+.classpath
+.project
+.settings
+bin/**
+
+# Intellij files
+*.iml
+*.ipr
+*.iws
+.idea/
+*.eml
+.idea
+/out
+
+# Emacs files
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode files
+.org-id-locations
+*_archive
