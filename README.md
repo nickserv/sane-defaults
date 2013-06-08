@@ -20,6 +20,9 @@ makes it easier to move and install these config files.  Please note that my
 install script installs homeshick for you, so you won't need to worry about
 that. :)
 
+## Installation
+`wget -q https://raw.github.com/thenickperson/sane-defaults/master/Makefile && make install`
+
 ##Goals
 - avoid interfering with the results a user expects to get when running a
 	command
