@@ -12,11 +12,34 @@
 !.gitignore
 *~
 
+# OS X files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
 # Vim files
 .*.sw[a-z]
 *.un~
 Session.vim
 .netrwhist
+
+# SublimeText project files
+*.sublime-workspace
+
+# TextMate files
+*.tmproj
+*.tmproject
+tmtags
 
 # Eclipse files
 .classpath
