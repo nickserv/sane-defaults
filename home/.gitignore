@@ -1,8 +1,8 @@
-# Ignore Linux things
+# Linux files
 !.gitignore
 *~
 
-# Ignore Vim things
+# Vim files
 .*.sw[a-z]
 *.un~
 Session.vim
