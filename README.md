@@ -13,10 +13,12 @@ for them lack sensible and easy to understand defaults. la aliases to ls -a, but
 	That's where this project comes in handy.
 
 ## About
-Sane defaults is a castle (dotfile repo) for
-[homeshick](https://github.com/andsens/homeshick) which contains Linux/Unix
-configs that make programs safer, better, and more intuitive, the way
-they should be.
+Sane defaults is a collection of Linux/Unix configs that make programs safer,
+better, and more intuitive, the way they should be. It is available as a castle
+(dotfile repo) for [homeshick](https://github.com/andsens/homeshick), which
+makes it easier to move and install these config files.  Please note that my
+install script installs homeshick for you, so you won't need to worry about
+that. :)
 
 ##Goals
 - avoid interfering with the results a user expects to get when running a
