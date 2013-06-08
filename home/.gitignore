@@ -1,3 +1,13 @@
+# This is a global gitignore file, containing useful ignore rules for many
+# operating systems and text editors. This gitignore does not ignore files for
+# any specific programming languages.
+
+# You may need to manually add this file to your global gitconfig so git knows
+# to use it for any repository:
+# git config --global core.excludesfile ~/.gitignore
+
+# More information: http://help.github.com/git-ignore/
+
 # Linux files
 !.gitignore
 *~
