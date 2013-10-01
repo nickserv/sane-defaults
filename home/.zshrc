@@ -50,3 +50,10 @@ setopt autocd
 # Use emacs keybinds, since they're modeless and closer to bash defaults
 bindkey -e
 
+#############
+# Variables #
+#############
+
+# These are just basic recommendations, set these to your liking!
+export EDITOR=nano
+export BROWSER=firefox
