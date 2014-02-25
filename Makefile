@@ -11,7 +11,7 @@ uninstall:
 
 clone:
 	echo "Cloning repository..."
-	$(HOMESHICK) clone https://github.com/thenickperson/sane-defaults.git
+	$(HOMESHICK) clone https://github.com/nicolasmccurdy/sane-defaults.git
 
 pull:
 	echo "Pulling repository..."
