@@ -1,9 +1,11 @@
 # Sane defaults for Linux/Unix software
 
 ## Project Status
+
 __partially complete__ (lacks an installer and needs more configs)
 
-##The Problem
+## The Problem
+
 Software on Linux and Unix is awesome. But let's face it, tons of good software
 for them lack sensible and easy to understand defaults. la aliases to ls -a, but
 	not always. Common command line programs like ls, grep, and git often have
@@ -13,6 +15,7 @@ for them lack sensible and easy to understand defaults. la aliases to ls -a, but
 	That's where this project comes in handy.
 
 ## About
+
 Sane defaults is a collection of Linux/Unix configs that make programs safer,
 better, and more intuitive, the way they should be. It is available as a castle
 (dotfile repo) for [homeshick](https://github.com/andsens/homeshick), which
@@ -21,9 +24,13 @@ install script installs homeshick for you, so you won't need to worry about
 that. :)
 
 ## Installation
-`wget -q https://raw.github.com/nicolasmccurdy/sane-defaults/master/Makefile && make install`
 
-##Goals
+```
+wget -q https://raw.github.com/nicolasmccurdy/sane-defaults/master/Makefile && make install
+```
+
+## Goals
+
 - avoid interfering with the results a user expects to get when running a
 	command
 - make programs more intuitive and easier to understand
@@ -33,7 +40,8 @@ that. :)
 - keep configurations minimal, including only what the average user of a command
 	might find useful
 
-##Helping Out
+## Helping Out
+
 This project is based off of my current configs repo on GitHub (though it has a
 very different purpose). I have already added some configs that offer pretty
 sensible defaults, but I need opinions on what other people find to be useful,
